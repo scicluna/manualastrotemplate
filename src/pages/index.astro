@@ -1,12 +1,12 @@
 ---
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component frontmatter". It never runs in the browser.
 console.log('This runs in your terminal, not the browser!');
+import Widget from '../components/widget'
+import '../styles/base.css'
 ---
-<!-- Below is your "component template." It's just HTML, but with
-     some magic sprinkled in to help you build great templates. -->
+
 <html>
   <body>
-    <h1 class="text-5xl">Hello, World!</h1>
+    <h1 class="text-5xl text-yellow-800">Hello, World!</h1>
+    <Widget/>
   </body>
 </html>
