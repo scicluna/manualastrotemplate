@@ -1,12 +1,12 @@
 ---
-console.log('This runs in your terminal, not the browser!');
-import Widget from '../components/widget'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Widget from '../components/client/widget'
 import '../styles/base.css'
 ---
 
-<html>
-  <body>
+<BaseLayout title="Home">
+  <main>
     <h1 class="text-5xl text-yellow-800">Hello, World!</h1>
     <Widget/>
-  </body>
-</html>
+  </main>
+</BaseLayout>

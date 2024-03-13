@@ -1,0 +1,21 @@
+---
+import BaseHead from '../components/server/BaseHead.astro'
+const {title} = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <BaseHead title={title}/>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Posts</a>
+      <a href="#">Contact</a>
+    </nav>
+    <h1>{title}</h1>
+      <slot /> <!-- your content is injected here -->
+  </body>
+</html>
